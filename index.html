@@ -19,7 +19,7 @@
             </ul>
         </nav>
     </header>
-    <img src="Pink_Frame_01.webp" width="450px" height="auto" alt="">
+    <img src="Pink_Frame_01.webp" width="450" height="auto" alt="">
 
     <div class="ana-kapsayici">
         <h2>Zihinsel Sağlık Yolculuğunuzda Yanınızdayım</h2>
@@ -66,7 +66,7 @@
             <div>
              <form action="/kaydet" method="POST">
   <label for="cinsiyet-secimi">Cinsiyetiniz:</label>
-  <select id="cinsiyet-secimi" name="cinsiyet" required>
+  <select id="cinsiyet-secimi" name="cinsiyet" required aria-valuemax="Lütfen Doldurunıuz">
     <option value="" disabled selected>Seçiniz...</option>
     <option value="erkek">Erkek</option>
     <option value="kadin">Kadın</option>
@@ -74,6 +74,9 @@
   </select>
   
   <br><br>
+
+  <label for="tarih">Doğum Tarihiniz</label>
+  <input type="date" placeholder="Lütfen Doğum Tarihinizini giriniz" value="">
 </form>
 
 
