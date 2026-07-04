@@ -1,0 +1,105 @@
+/* Genel Sayfa Ayarları */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+/* Üst Menü Tasarımı */
+header {
+    background-color: #7b9a8a; /* Burayı ablanın sevdiği renkle değiştirebilirsin */
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Flexbox Menü Hizalaması */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e0ece4;
+}
+
+/* Sayfadaki Beyaz Kutular */
+.ana-kapsayici {
+    background-color: white;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Buton Tasarımları */
+.buton {
+    display: inline-block;
+    background-color: #7b9a8a;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buton:hover {
+    background-color: #637e70;
+}
+
+/* Form İçi Özel Tasarımlar */
+#iletisim-formu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    max-width: 500px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+#iletisim-formu label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#iletisim-formu input, #iletisim-formu textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+#iletisim-formu textarea {
+    resize: vertical;
+}

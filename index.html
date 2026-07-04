@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ay Terapistlik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ay Terapistlik</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Hakkımda</a></li>
+                <li><a href="#">Hizmetler</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="Pink_Frame_01.webp" width="450px" height="auto" alt="">
+
+    <div class="ana-kapsayici">
+        <h2>Zihinsel Sağlık Yolculuğunuzda Yanınızdayım</h2>
+        <p>Güvenli, yargısız ve destekleyici bir alanda kendinizi keşfedin. Ay Terapistlik olarak daha iyi bir geleceğe birlikte adım atabiliriz.</p>
+        <a href="#" class="buton">Randevu Al</a>
+    </div>
+
+    <div class="ana-kapsayici">
+        <h2>Uzmanlık Alanları</h2>
+        <strong>Danışanlarımıza destek sağladığımız alanlar:</strong>
+        
+        <div style="text-align: left; margin-top: 20px;">
+            <h3>Bireysel Terapi </h3>
+            <p>Aile, bir çocuğun duygusal gelişiminin temel taşıdır. Çocukluk ve ergenlik döneminde ortaya çıkan uyum sorunları, okul kaygıları, öfke nöbetleri veya aile içi iletişim problemleri, doğru müdahalelerle çözülebilecek süreçlerdir. Uzmanlığım doğrultusunda, kanıta dayalı çocuk ve aile terapisi yöntemleriyle hem çocuklarımızın sağlıklı gelişimini destekliyor hem de ebeveynlere bu yolculukta rehberlik ediyorum. Aile dinamiklerinizi iyileştirmek, çocuğunuzun potansiyelini sağlıklı bir şekilde açığa çıkarmak ve evinizdeki huzuru yeniden inşa etmek için buradayım.</p>
+            
+            <h3>Oyun Terapistliği</h3>
+            <p>Çocuk yetiştirmek, kullanım kılavuzu olmayan bir yolculuktur ve bazen 'Nerede hata yapıyorum?' sorusuyla baş başa kalmak çok doğaldır. Çocuklar ve ailelerle yürüttüğüm terapi süreçlerinde, kitabi formüller uygulamak yerine her ailenin kendi dinamiklerine uygun, yaşayan çözümler üretiyorum. Oyun terapisinin bilimsel gücünü arkamıza alarak; çocukların öfke, korku ya da uyum problemlerini güvenli bir oyun odasında dönüştürüyoruz. Resmi kuralların soğukluğundan uzak, bilimin ışığında ve tamamen çocuğunuzun hızında ilerleyen bir değişim süreci için buradayım.</p>
+            
+            <h3>Çift ve Aile Terapisi</h3>
+            <p>Çoğu zaman çiftler birbirleriyle değil, birbirleri hakkında zihinlerinde yarattıkları senaryolarla tartışırlar. Aile içindeki çatışmalar ise genellikle bireysel değil, sistemin ortak bir çığlığıdır. Ben, ilişkilerdeki bu 'gürültüyü' azaltıp, birbirinizi gerçekten duymanızı sağlayan profesyonel bir köprü kuruyorum. İlişkinizin tıkanan noktalarını analiz ederken, kurumsal soğukluktan uzak ama bilimsel etik kurallara tamamen bağlı bir süreç yönetiyoruz. Haklıyı ve haksızı seçmek için değil; ilişkinizin geleceğini daha güçlü, dengeli ve huzurlu bir temele oturtmak için bu yolculuğa birlikte çıkabiliriz.</p>
+        </div>
+    </div>
+
+    <div class="ana-kapsayici">
+        <h2>İletişim</h2>
+        <p>Ablamla iletişime geçmek için formu doldurabilirsiniz.</p>
+        
+        <form id="iletisim-formu">
+            <div>
+                <label>Adınız Soyadınız:</label>
+                <input type="text" placeholder="Lütfen adınızı yazın" required>
+            </div>
+            
+
+            <div>
+                <label>E-posta Adresiniz:</label>
+                <input type="email" placeholder="Lütfen e-posta adresinizi yazın" required>
+            </div>
+            
+            <div>
+                <label>Mesajınız:</label>
+                <textarea rows="5" placeholder="Mesajınızı buraya yazabilirsiniz..." required></textarea>
+            </div>
+            <div>
+             <form action="/kaydet" method="POST">
+  <label for="cinsiyet-secimi">Cinsiyetiniz:</label>
+  <select id="cinsiyet-secimi" name="cinsiyet" required>
+    <option value="" disabled selected>Seçiniz...</option>
+    <option value="erkek">Erkek</option>
+    <option value="kadin">Kadın</option>
+    <option value="belirtilmedi">Belirtmek İstemiyorum</option>
+  </select>
+  
+  <br><br>
+</form>
+
+
+            <div>
+            <button type="submit" class="buton">Mesaj Gönder</button>
+            <button style=" display: inline-block;
+    background-color: #7b9a8a;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;" type="reset" class="button">Sıfırla</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
